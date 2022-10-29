@@ -120,3 +120,36 @@ task-list h2 {
 #tasks.task.content.text:not(:read-only {
     color: var(--pink);
 }
+
+#tasks.tasks.actions {
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.task.actions button {
+    cursor: pointer;
+    margin: 0.0.5rem;
+    font-size: 1.12rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.task.actions button:hover {
+    opacity: 0.8;
+}
+
+.task .actions button:active {
+    opacity: 0.6;
+}
+
+.task.actions.edit {
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    5
+}
+
+.task.actions.delete {
+    color: crimson;
+}
