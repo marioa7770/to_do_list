@@ -117,16 +117,16 @@ main {
     transition: 0.4s;
 }
 
-#tasks.task.content.text:not(:read-only) {
+#tasks .task .content .text:not(:read-only) {
     color: var(--pink);
 }
 
-#tasks.tasks.actions {
+#tasks .tasks .actions {
     display: flex;
     margin: 0 -0.5rem;
 }
 
-.task.actions button {
+.task .actions button {
     cursor: pointer;
     margin: 0.0.5rem;
     font-size: 1.12rem;
@@ -135,7 +135,7 @@ main {
     transition: 0.4s;
 }
 
-.task.actions button:hover {
+.task .actions button:hover {
     opacity: 0.8;
 }
 
@@ -143,13 +143,13 @@ main {
     opacity: 0.6;
 }
 
-.task.actions.edit {
+.task .actions .edit {
     background-image: linear-gradient(to right, var(--pink), var(--purple));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     5
 }
 
-.task.actions.delete {
+.task .actions .delete {
     color: crimson;
 }
